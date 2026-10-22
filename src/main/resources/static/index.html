@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgriConnect — Grow with confidence</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#">
+      <span class="brand-mark">✳</span>
+      <span>Agri<span>Connect</span><small>GROW WITH CONFIDENCE</small></span>
+    </a>
+
+    <div class="farm-chip">
+      <div class="farm-avatar">🌿</div>
+      <div><b>My Farm</b><small>Welcome, farmer</small></div>
+      <span class="chevron">⌄</span>
+    </div>
+
+    <div class="nav-label">WORKSPACE</div>
+
+    <nav id="navigation">
+      <button class="nav-item active" data-view="overview"><span>◫</span> Overview</button>
+      <button class="nav-item" data-view="crop"><span>♧</span> Crop advisor</button>
+      <button class="nav-item" data-view="disease"><span>⌕</span> Leaf health scan <i class="new-dot"></i></button>
+      <button class="nav-item" data-view="assistant"><span>✳</span> AI farming assistant</button>
+      <button class="nav-item" data-view="market"><span>↗</span> Market watch</button>
+      <button class="nav-item" data-view="finance"><span>₹</span> Farm finances</button>
+      <button class="nav-item" data-view="calendar"><span>▦</span> Crop calendar</button>
+      <button class="nav-item" data-view="inventory"><span>▤</span> Inventory & rentals</button>
+      <button class="nav-item" data-view="reports"><span>▥</span> Reports</button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="help-card">
+        <div class="help-spark">✳</div>
+        <b>Need a hand?</b>
+        <p>Ask your farming assistant anything, in your language.</p>
+        <button class="text-button" data-goto="assistant">Ask a question <span>↗</span></button>
+      </div>
+
+      <button class="nav-item" data-view="settings"><span>⚙</span> Preferences</button>
+
+      <div class="profile">
+        <div class="profile-pic">👩🏽‍🌾</div>
+        <div><b>Farm workspace</b><small>Local demo account</small></div>
+        <span class="dots">•••</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+   
+<header class="topbar">
+  <div class="mobile-brand">✳ AgriConnect</div>
+
+  <div class="crumb">
+    Workspace <span>/</span> <b id="crumbTitle">Overview</b>
+  </div>
+
+  <div class="top-actions">
+    <div class="status-pill">
+      <span></span> Your farm, at a glance
+    </div>
+
+    <select id="languageSelect" aria-label="Language">
+      <option>English</option>
+      <option>தமிழ்</option>
+      <option>తెలుగు</option>
+      <option>മലയാളം</option>
+      <option>ಕನ್ನಡ</option>
+      <option>हिन्दी</option>
+    </select>
+
+    <button class="icon-btn" id="themeToggle" title="Toggle theme">
+      ◐
+    </button>
+
+    
+<button
+  class="btn"
+  id="topLogoutBtn"
+  type="button"
+  style="display:none;background:#dc2626;color:white;padding:10px 16px;border:0;border-radius:8px;font-weight:bold;cursor:pointer;white-space:nowrap;"
+>
+  Logout ↗
+</button>
+
+
+    <div class="top-avatar">🌾</div>
+  </div>
+</header>
+ 
+
+    <section id="viewRoot"></section>
+
+    <footer>
+      Made for the people who feed us <span>♥</span>
+      <small>AgriConnect · Educational demo · Verify local agricultural advice</small>
+    </footer>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>
+

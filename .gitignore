@@ -1,0 +1,12 @@
+﻿.venv/
+**/.venv/
+__pycache__/
+*.pyc
+.env
+**/.env
+target/
+**/target/
+dataset/
+ml-service/dataset/
+
+ml-service/tomato_test.png.png
